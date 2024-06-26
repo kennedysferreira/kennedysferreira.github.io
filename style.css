@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(4%, 1% + 2vw, 6.25%);
+  font-family: "Poppins";
+
+  --contact-hover: hsl(131, 42%, 55%);
+  --git-hover: hsl(13, 74%, 53%);
+  --linkedin-hover: hsl(47, 82%, 62%);
+  --text-color: hsl(0, 0%, 100%);
+  --text-color-gray: hsl(0, 0%, 60%);
+  --bg-color: hsl(0, 0%, 5%);
+  --cursor-color:
+}
+html, a {
+  cursor: none;
+}
+
+#cursor {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #258CF3;
+  border: solid 0px var(--bg-color);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99;
+  transition: transform 0.1s ease-out;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+header {
+  display: flex;
+}
+
+#text {
+  width: 50vw;
+  margin: 40rem 40rem;
+}
+
+header h1 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 80rem;
+  line-height: 96rem;
+  color: var(--text-color);
+}
+
+header p {
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 28rem;
+  color: var(--text-color-gray);
+  span {
+    color: var(--text-color);
+  }
+}
+
+header a {
+  position: absolute;
+  right: 0;
+  margin: 40rem 40rem;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 28rem;
+  letter-spacing: 1rem;
+  padding: 12rem 16rem;
+  border-radius: 12rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+header a:hover {
+  color: var(--contact-hover);
+}
+
+footer {
+  display: flex;
+}
+
+footer #links {
+  position: absolute;
+  bottom: 0;
+  margin: 40rem 40rem;
+  a {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 20rem;
+    letter-spacing: 1rem;
+    line-height: 28rem;
+    padding: 12rem 16rem;
+    border-radius: 12rem;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
+
+footer #links a:first-child:hover {
+  color: var(--git-hover);
+}
+
+footer #links a:first-child:hover {
+  color: var(--git-hover);
+}
+
+footer #links a:last-child:hover {
+  color: var(--linkedin-hover);
+}
+
+footer img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 40rem 40rem;
+}
+
