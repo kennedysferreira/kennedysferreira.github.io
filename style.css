@@ -13,11 +13,22 @@
   --linkedin-hover: hsl(47, 82%, 62%);
   --text-color: hsl(0, 0%, 100%);
   --text-color-gray: hsl(0, 0%, 60%);
-  --bg-color: hsl(0, 0%, 5%);
-  --cursor-color:
+  --bg-color: #001020;
+  --border-profile: hsla(0, 0%, 45%, 0.65);
+  --cursor-color: hsl(210, 90%, 55%);
 }
-html, a {
+
+html{
+  overflow: hidden;
+  a {
   cursor: none;
+}
+}
+
+
+header, #contactWrapper, #text, #links, footer a {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
 
 #cursor {
@@ -26,12 +37,12 @@ html, a {
   position: fixed;
   top: 0;
   left: 0;
-  background: #258CF3;
+  background: var(--cursor-color);
   border: solid 0px var(--bg-color);
   border-radius: 50%;
   pointer-events: none;
   z-index: 99;
-  transition: transform 0.1s ease-out;
+  transition: transform 80ms ease-out;
 }
 
 body {
@@ -40,11 +51,13 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
 }
 
 #text {
   width: 50vw;
-  margin: 40rem 40rem;
+  margin-left: 40rem;
+  animation-delay: 400ms;
 }
 
 header h1 {
@@ -65,10 +78,29 @@ header p {
   }
 }
 
-header a {
-  position: absolute;
-  right: 0;
-  margin: 40rem 40rem;
+#contactWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 40rem 40rem 0 0;
+  animation-delay: 200ms;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#contactWrapper img {
+  position: relative;
+  object-fit: cover;
+  width: 36rem;
+  height: 36rem;
+  border: 2px solid var(--border-profile);
+  border-radius: 50%;
+}
+
+#contactWrapper a {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 20rem;
@@ -78,20 +110,34 @@ header a {
   border-radius: 12rem;
   text-decoration: none;
   color: var(--text-color);
+  margin-right: 16rem;
 }
 
-header a:hover {
+#contactWrapper a:hover {
   color: var(--contact-hover);
+  transition: 300ms ease-in;
+}
+
+.status {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: #11a652;
+  border: 0.5rem solid white;
+  border-radius: 50%;
 }
 
 footer {
   display: flex;
+  
 }
 
 footer #links {
   position: absolute;
   bottom: 0;
-  margin: 40rem 40rem;
+  margin: 24rem;
   a {
     font-family: "Poppins";
     font-weight: 500;
@@ -102,25 +148,85 @@ footer #links {
     border-radius: 12rem;
     text-decoration: none;
     color: var(--text-color);
+    animation-delay: 600ms;
   }
 }
 
-footer #links a:first-child:hover {
-  color: var(--git-hover);
-}
+animation-delay: 1.2s;
 
 footer #links a:first-child:hover {
   color: var(--git-hover);
+  transition: 300ms ease-in;
 }
 
 footer #links a:last-child:hover {
   color: var(--linkedin-hover);
+  transition: 300ms ease-in;
 }
 
-footer img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 40rem 40rem;
+@media (max-width: 766px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #text {
+    width: 80vw;
+    height: 100vh;
+  }
+
+  header h1 {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 60rem;
+    line-height: 72rem;
+    color: var(--text-color);
+  }
+
+  header p {
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 24rem;
+    color: var(--text-color-gray);
+    span {
+      color: var(--text-color);
+    }
+  }
+
+  #contactWrapper {
+    margin: 20rem;
+    img {
+      position: relative;
+      object-fit: cover;
+      width: 36rem;
+      height: 36rem;
+      border: 2px solid var(--border-profile);
+      border-radius: 50%;
+    }
+    a {
+      font-size: 16rem;
+    }
+  }
+
+  .status {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  footer #links a {
+    font-size: 16rem;
+    padding: 16rem;
+  }
 }
 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
