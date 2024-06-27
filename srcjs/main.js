@@ -8,4 +8,3 @@ const handleCursorMove = (e) => {
 };
 
 document.addEventListener("mousemove", handleCursorMove);
-
