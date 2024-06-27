@@ -65,6 +65,7 @@ header p {
   font-weight: 400;
   font-size: 20rem;
   line-height: 28rem;
+  letter-spacing: 1rem;
   color: var(--text-color-gray);
   span {
     color: var(--text-color);
@@ -76,33 +77,26 @@ header p {
   justify-content: flex-end;
   align-items: center;
   margin: 40rem 40rem 0 0;
-}
-
-.profile-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-#contactWrapper img {
-  position: relative;
-  object-fit: cover;
-  width: 36rem;
-  height: 36rem;
-  border: 2px solid var(--border-profile);
-  border-radius: 50%;
-}
-
-#contactWrapper a {
-  font-family: "Poppins";
-  font-weight: 500;
-  font-size: 20rem;
-  line-height: 28rem;
-  letter-spacing: 1rem;
-  padding: 12rem 16rem;
-  border-radius: 12rem;
-  text-decoration: none;
-  color: var(--text-color);
-  margin-right: 16rem;
+  img {
+    position: relative;
+    object-fit: cover;
+    width: 36rem;
+    height: 36rem;
+    border: 2px solid var(--border-profile);
+    border-radius: 50%;
+  }
+  a {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 28rem;
+    letter-spacing: 1rem;
+    padding: 12rem 16rem;
+    border-radius: 12rem;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 16rem;
+  }
 }
 
 #contactWrapper:hover {
@@ -114,17 +108,6 @@ header p {
     border: 2px solid var(--contact-hover);
     transition: 300ms ease-in;
   }
-}
-
-.status {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  width: 8rem;
-  height: 8rem;
-  background-color: #11a652;
-  border: 0.5rem solid white;
-  border-radius: 50%;
 }
 
 footer {
