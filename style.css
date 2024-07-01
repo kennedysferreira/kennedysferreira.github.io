@@ -117,7 +117,7 @@ footer {
 footer #links {
   position: absolute;
   bottom: 0;
-  margin: 0 0 24rem 8rem;
+  margin: 24rem;
   a {
     font-family: "Poppins";
     font-weight: 500;
@@ -197,9 +197,14 @@ footer #links a:last-child:hover {
     right: 2rem;
   }
 
-  footer #links a {
-    font-size: 16rem;
-    padding: 16rem;
+  footer #links {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 24rem 8rem;
+    a {
+      font-size: 16rem;
+      padding: 16rem;
+    }
   }
 }
 
