@@ -198,14 +198,13 @@ footer #links a:last-child:hover {
   }
 
   footer #links {
-    position: absolute;
-    bottom: 0;
     margin: 0 0 24rem 8rem;
     a {
       font-size: 16rem;
       padding: 16rem;
     }
   }
+
 }
 
 @keyframes fadeIn {
