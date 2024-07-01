@@ -148,6 +148,9 @@ footer #links a:last-child:hover {
     flex-direction: column;
   }
 
+  #cursor {
+    display: none;
+  }
   #text {
     width: 80vw;
     height: 100vh;
