@@ -1,84 +1,83 @@
 # kennedysferreira.github.io
 
-Bem-vindo ao repositório do meu site pessoal! Este projeto contém o código-fonte do meu portfólio online, desenvolvido para apresentar minhas habilidades, projetos e informações de contato.
+Welcome to the repository for my personal website! This project contains the source code for my online portfolio, developed to showcase my skills, projects, and contact information.
 
-## Índice
+## Table of Contents
 
-- [Visão Geral](#visão-geral)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contribution](#contribution)
+- [License](#license)
+- [Contact](#contact)
 
-## Visão Geral
+## Overview
 
-Este repositório hospeda o código-fonte do meu site pessoal, disponível em [kennedysferreira.github.io](https://kennedysferreira.github.io). O site foi criado para destacar meus projetos, habilidades profissionais e fornecer uma maneira de entrar em contato comigo.
+This repository hosts the source code for my personal website, available at [kennedysferreira.github.io](https://kennedysferreira.github.io). The site was created to highlight my projects, professional skills, and provide a way to get in touch with me.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 - [Bootstrap](https://getbootstrap.com/)
 
-## Instalação
+## Installation
 
-Para clonar e rodar este projeto localmente, siga as etapas abaixo:
+To clone and run this project locally, follow the steps below:
 
-1. Clone o repositório:
+1. Clone the repository:
     ```bash
     git clone https://github.com/kennedysferreira/kennedysferreira.github.io.git
     ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
     ```bash
     cd kennedysferreira.github.io
     ```
 
-3. Abra o arquivo `index.html` no seu navegador preferido.
+3. Open the `index.html` file in your preferred browser.
 
-## Uso
+## Usage
 
-Basta abrir o arquivo `index.html` no seu navegador para visualizar o site. Você pode modificar os arquivos conforme necessário para personalizar o conteúdo ou design.
+Simply open the `index.html` file in your browser to view the site. You can modify the files as needed to customize the content or design.
 
-## Estrutura do Projeto
+## Project Structure
 
-A estrutura do projeto é a seguinte:
+The project structure is as follows:
 
 kennedysferreira.github.io/
+
 ├── css/
-│ ├── styles.css
+│   ├── styles.css
 
 ├── js/
-│ ├── scripts.js
+│   ├── scripts.js
 
 ├── img/
-│ ├── (imagens do projeto)
+│   ├── (project images)
 
 ├── index.html
 
 ├── README.md
 
+- `css/`: Contains the CSS files for styling the site.
+- `js/`: Contains the JavaScript files for additional functionality.
+- `img/`: Contains the images used on the site.
+- `index.html`: Main file of the site.
 
-- `css/`: Contém os arquivos CSS para estilização do site.
-- `js/`: Contém os arquivos JavaScript para funcionalidade adicional.
-- `img/`: Contém as imagens utilizadas no site.
-- `index.html`: Arquivo principal do site.
+## Contribution
 
-## Contribuição
+Contributions are welcome! If you have suggestions or find any issues, please open an issue or submit a pull request.
 
-Contribuições são bem-vindas! Se você tiver sugestões ou encontrar algum problema, por favor, abra uma issue ou envie um pull request.
+## License
 
-## Licença
+This project is licensed under the [MIT License](LICENSE).
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
-## Contato
+## Contact
 
 Kennedy S. Ferreira  
 Email: kennedy@example.com  
 LinkedIn: [linkedin.com/in/kennedysferreira](https://www.linkedin.com/in/kennedysferreira)
-
