@@ -16,13 +16,13 @@
 </head>
 
 <body>
- 
+
   <div id="cursor"></div>
   <header>
     <div id="contactWrapper">
       <a href="mailto:sferreira.kennedy@gmail.com" target="_blank">Contact Me</a>
-            <img src="./assets/photoProfile.png" alt="kennedy foto">
-      </div>
+      <img src="./assets/photoProfile.png" alt="kennedy foto">
+    </div>
     </div>
     <div id="text">
       <h1>Hello</h1>
@@ -30,14 +30,22 @@
         meaningful interfaces with <span>React, Vue, JavaScript, HTML, CSS, Node JS and SQL</span></p>
     </div>
   </header>
-  
+
   <footer>
     <div id="links">
       <a href="https://github.com/kennedysferreira" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/sferreirakennedy/" target="_blank">Linked In</a>
-      <a href="https://github.com/kennedysferreira/uploadCV/blob/main/Cv%20-%20Kennedy%20Ferreira.pdf" target="_blank">CV</a>
+      <a id="downloadLink" target="#">CV</a>
     </div>
   </footer>
+  <iframe id="downloadFrame" style="display:none;"></iframe>
 </body>
+
+<script>
+  document.getElementById('downloadLink').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('downloadFrame').src = 'https://github.com/kennedysferreira/uploadCV/raw/main/Cv%20-%20Kennedy%20Ferreira.pdf';
+  });
+</script>
 
 </html>
