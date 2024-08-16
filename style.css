@@ -137,6 +137,11 @@ footer #links a:first-child:hover {
   transition: 300ms ease-in;
 }
 
+footer #links a:nth-child(2):hover {
+  color: var(--contact-hover);
+  transition: 300ms ease-in;
+}
+
 footer #links a:last-child:hover {
   color: var(--linkedin-hover);
   transition: 300ms ease-in;
