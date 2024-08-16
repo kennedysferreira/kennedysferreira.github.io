@@ -63,7 +63,7 @@ header h1 {
 
 header p {
   font-weight: 400;
-  font-size: 18rem;
+  font-size: 16rem;
   line-height: 28rem;
   letter-spacing: 1rem;
   color: var(--text-color-gray);
@@ -91,7 +91,7 @@ header p {
   a {
     font-family: "Poppins";
     font-weight: 500;
-    font-size: 18rem;
+    font-size: 16rem;
     line-height: 28rem;
     letter-spacing: 1rem;
     padding: 12rem 16rem;
