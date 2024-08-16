@@ -78,12 +78,15 @@ header p {
   align-items: center;
   margin: 40rem 40rem 0 0;
   img {
+    -webkit-object-fit: cover;
     position: relative;
     object-fit: cover;
-    width: 36rem;
-    height: 36rem;
+    width: 36px;
+    height: 36px;
     border: 2px solid var(--border-profile);
     border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
   }
   a {
     font-family: "Poppins";
@@ -210,6 +213,10 @@ footer #links a:last-child:hover {
     }
   }
 
+}
+
+#downloadFrame {
+  display: none;
 }
 
 @keyframes fadeIn {
