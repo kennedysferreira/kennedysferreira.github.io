@@ -63,7 +63,7 @@ header h1 {
 
 header p {
   font-weight: 400;
-  font-size: 20rem;
+  font-size: 18rem;
   line-height: 28rem;
   letter-spacing: 1rem;
   color: var(--text-color-gray);
